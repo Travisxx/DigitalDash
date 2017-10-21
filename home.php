@@ -41,21 +41,20 @@
 		</div>
 	</nav>
 
-	<div id="hero">
+	<div class="pure-g" id="hero">
 		<div id="herocontent">
-			<div class="row">
+			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
 				<div id="herotext">
 					<h1>FEATURED</h1>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 				</div>	
-			</div>
-			<div class="row">
 				<div id="heroexplorebutton">
 					<a href="#learnmore">explore</a>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="pure-g" id="emailsignup">
 		<div class="body">
 			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
