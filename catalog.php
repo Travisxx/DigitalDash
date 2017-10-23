@@ -2,146 +2,246 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+	  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+	<!--<![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://use.fontawesome.com/3e58986b99.js"></script>
+	<script type="text/javascript" src="js/style.js"></script>
 </head>
 <body>
 
-<header>
-	<div class="row">
-		<div id="topnav">
-			<ul>
-			  <li><a href="#news"><img src="img/carticon.png"></a></li>
-			  <li><a href="#contact"><img src="img/profileicon.png"></a></li>
-			  <li><input type="text" name="search" placeholder="Search.."></li>
-			</ul>
+<div id="wrapper">
+	
+	<nav class="pure-g">
+		<div class="body" id="webnav">
+			<div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5" id="logo">
+				<img src="img/ddlogo.svg">
+			</div>
+			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5" id="usericons">
+				<ul>
+				 	<li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+				 	<li><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></li>
+				 	<li><i class="fa fa-search" aria-hidden="true" id="searchicon"></i></li>
+				 	<li><a href="#facebook">Apple</a></li>
+				 	<li><a href="#news">Samsung</a></li>
+				 	<li><a href="#contact">Headphones</a></li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</header>
-<div id="cataloghero">
-	<div class="body">
-		<div id="catalogheroh1">
-			<h1>CASES</h1>
-		</div>
-	</div>
-</div>
-<div id="catalog">
-	<div class="body">
-		<div id="filters">
-			<div id="filterbody">
-				<div class="filterstyle">
-					<span>Brand</span>
-					<ul>
-						<li><input id="checkBox" type="checkbox">Apple</li>
-						<li><input id="checkBox" type="checkbox">Samsung</li>
-					</ul>
-				</div>
-				<div class="filterstyle">
-					<span>Color</span>
-					<ul>
-						<li><input id="checkBox" type="checkbox">White</li>
-						<li><input id="checkBox" type="checkbox">Red</li>
-						<li><input id="checkBox" type="checkbox">Blue</li>
-						<li><input id="checkBox" type="checkbox">Clear</li>
-						<li><input id="checkBox" type="checkbox">silver</li>
-					</ul>
-				</div>
-				<div class="filterstyle">
-					<span>Star Rating</span>
-					<ul>
-						<li><input id="checkBox" type="checkbox">1 star</li>
-						<li><input id="checkBox" type="checkbox">2 star</li>
-						<li><input id="checkBox" type="checkbox">3 star</li>
-						<li><input id="checkBox" type="checkbox">4 star</li>
-						<li><input id="checkBox" type="checkbox">5 star</li>
-					</ul>
+	</nav>
+	<!--
+	<div class="pure-g" id="hero">
+		<div id="herocontent">
+			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+				<div id="herotext">
+					<h1>FEATURED</h1>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 				</div>	
-				<div class="filterstyle">
-					<span>Price</span>
+				<div id="heroexplorebutton">
+					<a href="#learnmore">explore</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pure-g" id="emailsignup">
+		<div class="signupbody">
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3" id="singuptext">
+				<p>Register for our emails!</p>
+			</div>
+			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3" id="signupform">
+				<form >
+					<input type="text" name="email" placeholder="john@johnson.com">
+					<input type="submit" name="submit">
+				</form>
+			</div>
+		</div>	
+	</div>
+	-->
+
+	<div class="pure-g" id="main">
+		<div class="body">
+			<div class="pure-u-1 pure-u-md-1 pure-u-lg-1-4">
+				<div id="filterbody">
+					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
+						<span>Brand</span>
+						<ul>
+							<li><input type="checkbox"><label>Apple</label></li>
+							<li><input type="checkbox"><label>Samsung</label></li>
+						</ul>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
+						<span>Color</span>
+						<ul>
+							<li><input type="checkbox"><label>White</label></li>
+							<li><input type="checkbox"><label>Red</label></li>
+							<li><input type="checkbox"><label>Blue</label></li>
+							<li><input type="checkbox"><label>Clear</label></li>
+							<li><input type="checkbox"><label>Silver</label></li>
+						</ul>
+					</div>
+					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
+						<span>Star Rating</span>
+						<ul>
+							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+						</ul>
+					</div>	
+					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
+						<span>Price</span>
+						<ul>
+							<li><input type="checkbox"><label>$10.00</label></li>
+							<li><input type="checkbox"><label>$15.00</label></li>
+							<li><input type="checkbox"><label>$20.00</label></li>
+							<li><input type="checkbox"><label>$25.00</label></li>
+							<li><input type="checkbox"><label>$30.00</label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="pure-u-1 pure-u-md-1 pure-u-lg-3-4">
+				
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/iphonecontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>					
+							<div class="catalogmaindescription">
+								<div class="descparagraph">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="descbutton">
+									<a href="#shop">SEE MORE</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/samsungcontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>
+							<div class="catalogmaindescription">
+								<div class="descparagraph">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="descbutton">
+									<a href="#shop">SEE MORE</a>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>
+
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/samsungcontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>
+							<div class="catalogmaindescription">
+								<div class="descparagraph">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="descbutton">
+									<a href="#shop">SEE MORE</a>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/samsungcontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>
+							<div class="catalogmaindescription">
+								<div class="descparagraph">
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="descbutton">
+									<a href="#shop">SEE MORE</a>
+								</div>
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div> <!-- wrapper -->
+
+<footer>
+	<div class="row">
+		<div class="pure-g body">
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+				<ul>
+					<li>About us</li>
+					<li>Contact Us</li>
+				</ul>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+				<ul>
+					<li>Policies</li>
+					<li>Security</li>
+				</ul>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+				<div id="social">
 					<ul>
-						<li><input id="checkBox" type="checkbox">price 1</li>
-						<li><input id="checkBox" type="checkbox">price 2</li>
-						<li><input id="checkBox" type="checkbox">price 3</li>
-						<li><input id="checkBox" type="checkbox">price 4</li>
-						<li><input id="checkBox" type="checkbox">price 5</li>
+						<li><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></li>
+						<li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li>
+						<li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="results">
-			<div class="catalogresults">
-
-				<div class="resultcarduser">
-					<div class="resultimageuser">
-						<img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/NY/MNYW2/MNYW2?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1488754682191">
-					</div>
-					<div class="resultdetailsuser">
-						<div class="carddetailsuser">
-							<span>NAME</span>
-							<ul>
-								<li>Star Rating</li>
-								<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </li>
-								<li>SKU#</li>
-								<li>Stock:</li>
-								<li>Cost:</li>
-								<li>Retail Price:</li>
-							</ul>
-							<div class="cardbuybutton">
-								<a href="#buy">BUY</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="resultcarduser">
-					<div class="resultimageuser">
-						<img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/NY/MNYW2/MNYW2?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1488754682191">
-					</div>
-					<div class="resultdetailsuser">
-						<div class="carddetailsuser">
-							<span>NAME</span>
-							<ul>
-								<li>Star Rating</li>
-								<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </li>
-								<li>SKU#</li>
-								<li>Stock:</li>
-								<li>Cost:</li>
-								<li>Retail Price:</li>
-							</ul>
-							<div class="cardbuybutton">
-								<a href="#buy">BUY</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="resultcarduser">
-					<div class="resultimageuser">
-						<img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/NY/MNYW2/MNYW2?wid=1000&hei=1000&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1488754682191">
-					</div>
-					<div class="resultdetailsuser">
-						<div class="carddetailsuser">
-							<span>NAME</span>
-							<ul>
-								<li>Star Rating</li>
-								<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </li>
-								<li>SKU#</li>
-								<li>Stock:</li>
-								<li>Cost:</li>
-								<li>Retail Price:</li>
-							</ul>
-							<div class="cardbuybutton">
-								<a href="#buy">BUY</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
 	</div>
-</div>
+</footer>
 
 </body>
 </html>
