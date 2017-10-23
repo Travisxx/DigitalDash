@@ -10,7 +10,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 }
 
 footer {
@@ -141,16 +140,17 @@ nav {
     float: left;
     clear: right;
     color: #fff;
-    padding: 0 10px 10px 40px;
 }
 
 #herotext p {
     font-size: 2em;
+    padding: 0 20px 50px 50px;
 }
 
 #herotext h1 {
     font-size: 4em;
     font-weight: bold;
+    padding: 50px 20px 20px 50px;
     color: #FFF;
 }
 
@@ -204,24 +204,49 @@ nav {
     text-decoration: none;
 }
 
+#signupform {
+    background-color: #f1f1f1;
+    float: left;
+}
+
+.signupbody {
+    width: 90%;
+    margin: auto;
+    float: left;
+}
+
+#singuptext {
+    background-color: #FF404C;
+    float: left;
+    text-align: center;
+}
+
+#singuptext p {
+    padding: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+
 #emailsignup form {
-    padding-top: 40px;
+    padding: 14px 0;
+    width: 95%;
+    margin: auto;
 }
 
 #emailsignup form > input[type="text"] {
-    width: 70%;
+    width: 65%;
     background-color: #f1f1f1;
     border-style: none;
-    padding: 15px 0 15px 10px;
+    padding: 15px 5%;
     border-radius: 25px;
 }
 
 #emailsignup form > input[type="submit"] {
+    width: 20%;
     color: #fff;
-    width: 10%;
     background-color: #FF404C;
     border-style: none;
-    padding: 15px 10px;
+    padding: 15px 2.5px;
     border-radius: 25px;
 }
 
@@ -336,9 +361,6 @@ nav {
     padding: 50px 0;
 }
 
-#headphonecontent{
-
-}
 
 #headphonecontent h2 {
     width: 100%;
@@ -361,15 +383,18 @@ nav {
 #headphoneinner {
     width: 100%;
     float: left;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #headphoneinner  h2 {
-    padding: 0 0 0 15px;
+    font-size: 2em;
+    padding: 0 20px 10px 20px;
 }
 
 #headphoneinner  p {
-    padding: 0 0 0 15px;
+    padding: 0 20px 0 20px;
+    line-height: 1.5em;
+    color: #f1f1f1;
 }
 
 
@@ -633,8 +658,12 @@ nav {
 }
 
 #herocontent {
-    width: 95%;
+    width: 100%;
 }
+
+#main{
+margin-top: 20px;
+} 
 
 #apple {
     margin-top: 50px;
@@ -650,8 +679,38 @@ nav {
     display: block;
 }
 
+.signupbody {
+    width: 100%;
 
 }
 
+@media screen and (max-width: 425px) {
 
+#herotext h1 {
+    font-size: 2.5em;
+}
 
+#hero p {
+    font-size: 1.5em;
+}
+
+#herocontent {
+    width: 100%;
+    background-image: url(../img/rowan-neal-263978.jpg);
+    background-size: stretch;
+    background-position: center;
+    height: 500px;
+}
+
+.featuredimage img {
+    display: block;
+    max-width: 250px;
+    max-height: 250px;
+
+}
+
+#headphoneinner {
+    margin-top: 10px;
+}
+
+}

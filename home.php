@@ -25,17 +25,17 @@
 	
 	<nav class="pure-g">
 		<div class="body" id="webnav">
-			<div class="pure-u-1 pure-u-md-1 pure-u-lg-2-5" id="logo">
+			<div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5" id="logo">
 				<img src="img/ddlogo.svg">
 			</div>
-			<div class="pure-u-1 pure-u-md-1 pure-u-lg-3-5" id="usericons">
+			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5" id="usericons">
 				<ul>
-				  <li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
-				  <li><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></li>
-				  <li><i class="fa fa-search" aria-hidden="true" id="searchicon"></i></li>
+				 	<li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+				 	<li><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></li>
+				 	<li><i class="fa fa-search" aria-hidden="true" id="searchicon"></i></li>
 				 	<li><a href="#facebook">Apple</a></li>
-				  <li><a href="#news">Samsung</a></li>
-				  <li><a href="#contact">Headphones</a></li>
+				 	<li><a href="#news">Samsung</a></li>
+				 	<li><a href="#contact">Headphones</a></li>
 				</ul>
 			</div>
 		</div>
@@ -56,24 +56,19 @@
 	</div>
 
 	<div class="pure-g" id="emailsignup">
-		<div class="body">
-			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+		<div class="signupbody">
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3" id="singuptext">
+				<p>Register for our emails!</p>
+			</div>
+			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3" id="signupform">
 				<form >
-					<input type="text" name="email" placeholder="Sign up for our emails!">
+					<input type="text" name="email" placeholder="john@johnson.com">
 					<input type="submit" name="submit">
 				</form>
 			</div>
-			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-				<div id="social">
-					<ul>
-						<li><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></li>
-						<li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li>
-						<li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li>
-					</ul>
-				</div>
-			</div>
 		</div>	
 	</div>
+
 	<div class="pure-g" id="main">
 		<div class="body">
 
@@ -130,7 +125,7 @@
 		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2" id="headphonesimage">
 			<img src="img/headphones.png">
 		</div>
-		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2" id="headphonecontent">
+		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
 			<div id="headphoneinner">
 				<h2>HEAD SWAG</h2>
 				<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</P>
@@ -145,17 +140,26 @@
 <footer>
 	<div class="row">
 		<div class="pure-g body">
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
 				<ul>
 					<li>About us</li>
 					<li>Contact Us</li>
 				</ul>
 			</div>
-			<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
 				<ul>
 					<li>Policies</li>
 					<li>Security</li>
 				</ul>
+			</div>
+			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+				<div id="social">
+					<ul>
+						<li><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></li>
+						<li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li>
+						<li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
