@@ -1,4 +1,4 @@
-#wrapper {
+.wrapper {
     width: 100%;
     float: left;
     background: #ffffff; /* Old browsers */
@@ -10,13 +10,37 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+     color: #565656;
 }
 
 footer {
     width: 100%;
     float: left;
     clear: right;
-    padding: 100px 0;
+    padding-top: 100px;
+
+}
+
+footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FF404C;
+}
+
+footer li {
+    letter-spacing: 1px;
+}
+
+
+.disclaimer {
+    width: 100%;
+    float: left;
+    clear: right;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f1f1f1;
+    padding: 15px 0;
 }
 
 nav {
@@ -24,6 +48,7 @@ nav {
     float: left;
     clear: right;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .row {
@@ -55,7 +80,7 @@ nav {
 #searchbar form {
     width: 80%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #searchbar form > input[type="text"]:focus {
@@ -66,7 +91,7 @@ nav {
     width: 70%;
     background-color: #f1f1f1;
     border-style: none;
-    padding: 10px 0 10px 10px;
+    padding: 10px 2.5%;
     border-radius: 25px;
 }
 
@@ -81,7 +106,7 @@ nav {
     width: 20%;
     background-color: #FF404C;
     border-style: none;
-    padding: 10px 10px;
+    padding: 10px 2.5%;
     border-radius: 25px;
 }
 
@@ -155,22 +180,6 @@ nav {
 }
 
 
-
-#heroexplorebutton {
-    float: left;
-    clear: right;
-    padding: 0 0 0 50px;
-}
-
-#heroexplorebutton a {
-    font-size: 20px;
-    color: #29ABE2;
-    border-radius: 50px;
-    text-decoration: none;
-    background: #fff; /* Old browsers */
-}
-
-
 /* ---------------------- email section -------------------------*/
 
 #emailsignup {
@@ -181,7 +190,7 @@ nav {
 
 
 #social {
-    float: right;
+    float: left;
 }
 
 #social i {
@@ -200,7 +209,7 @@ nav {
 #social li {
     float: left;
     color: #000;
-    padding: 50px 15px 0 0;
+    padding: 10px 15px 0 0;
     text-decoration: none;
 }
 
@@ -266,7 +275,6 @@ nav {
     float: left;
     clear: right;
     padding-top: 30px;
-    padding-bottom: 50px; 
     -webkit-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
     -moz-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
     box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
@@ -284,23 +292,23 @@ nav {
 }
 
 .descbutton {
-    width: 80%;
     margin: auto;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 15px;
     text-align: center;
     background-color: #FF404C;
 }
 
 .descbutton a {
     padding: 10px 30px;
-    font-size: 20px;
-    color: #f1f1f1;
+    font-size: 15px;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 4px;
 }
 
+.descbutton i {
+    color: #fff;
+    padding-right: 5px;
+}
 
 .imagecontainer {
     position: relative;
@@ -416,6 +424,53 @@ nav {
 
 /*---------------------------- catalog site ---------------------*/
 
+.titleheader {
+    width: 80%;
+    margin: auto;
+    clear: right;
+    height: 500px;
+    background-image: url("../img/catalogbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    -moz-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+}
+
+.titleheader h1 {
+    position: absolute;
+    bottom: 20px;
+    font-size: 10em;
+    color: rgba(255, 255, 255, 0.5);
+
+    
+}
+
+.catalogbodycontainer {
+    width: 90%;
+    margin: auto;
+    clear: right;
+
+}
+
+#filtertoggle {
+    width: 100%;
+    float: left;
+    clear: right;
+    display: none;
+}
+
+#filtertoggle h3 {
+    display: inline-block;
+    float: left;
+}
+
+#filtertoggle i {
+    float: right;
+    padding-bottom: 10px;
+}
 
 #filterbody {
    width: 100%;
@@ -427,12 +482,15 @@ nav {
    float: left;
    margin-bottom: 30px;
    padding-bottom: 20px;
-   border-bottom: solid 1px #f1f1f1;
+   -webkit-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    -moz-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
 }
 
 .filterstyle ul {
     width: 100%;
     float: left;
+    padding-left: 10px;
 }
 
 .filterstyle li {
@@ -443,11 +501,21 @@ nav {
 .filterstyle span {
     width: 100%;
     float: left;
-    padding: 5px 0;
+    padding: 7px 0;
     margin-bottom: 10px;
     text-align: center;
-    color: #565656;
-    font-weight: 600;
+    color: #5078A3;
+    background-color: #f1f1f1;
+
+
+}
+
+.filterstyle label {
+    margin-left: 10px;
+}
+
+.filterstyle i {
+    margin-left: 10px;
 }
 
 .catalogbody {
@@ -488,6 +556,22 @@ nav {
     width: 60%;
     float: left;
     clear: right;
+}
+
+.catalogdescbutton {
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #FF404C;
+    border-radius: 25px;
+}
+
+.catalogdescbutton a {
+    padding: 10px 30px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
 }
 
 
@@ -630,64 +714,107 @@ nav {
 
 @media screen and (max-width: 768px) {
 
-.body {
-    width: 95%;
+    .body {
+        width: 95%;
+    }
+
+    #herocontent {
+        width: 100%;
+    }
+
+    #main{
+    margin-top: 20px;
+    } 
+
+    #apple {
+        margin-top: 50px;
+    }
+
+    #samsung {
+        margin-top: 50px;
+    }
+
+    #logo img {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+
+    .signupbody {
+        width: 100%;
+
+    }
+
+    .filterstyle {
+        float: left;
+        margin-bottom: 30px;
+        padding-bottom: 20px 20px;
+        box-shadow: 0px 0px 35px -5px rgba(163,173,194,0);
+    }
+
+    .filterstyle span {
+        width: 100%;
+        float: left;
+        padding: 7px 0 7px 10px;
+        margin-bottom: 10px;
+        text-align: left;
+        color: #5078A3;
+        font-weight: bold;
+        background-color: transparent;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
 }
 
-#herocontent {
-    width: 100%;
-}
 
-#main{
-margin-top: 20px;
-} 
 
-#apple {
-    margin-top: 50px;
-}
 
-#samsung {
-    margin-top: 50px;
-}
 
-#logo img {
-    width: 70%;
-    margin: auto;
-    display: block;
-}
-
-.signupbody {
-    width: 100%;
-
-}
 
 @media screen and (max-width: 425px) {
 
-#herotext h1 {
-    font-size: 2.5em;
-}
+    #herotext h1 {
+        font-size: 2.5em;
+    }
 
-#hero p {
-    font-size: 1.5em;
-}
+    #hero p {
+        font-size: 1.5em;
+    }
 
-#herocontent {
-    width: 100%;
-    background-image: url(../img/rowan-neal-263978.jpg);
-    background-size: stretch;
-    background-position: center;
-    height: 500px;
-}
+    #herocontent {
+        width: 100%;
+        background-image: url(../img/rowan-neal-263978.jpg);
+        background-size: stretch;
+        background-position: center;
+        height: 500px;
+    }
 
-.featuredimage img {
-    display: block;
-    max-width: 200px;
-    max-height: 200px;
+    .featuredimage img {
+        display: block;
+        max-width: 200px;
+        max-height: 200px;
 
-}
+    }
 
-#headphoneinner {
-    margin-top: 10px;
-}
+    #headphoneinner {
+        margin-top: 10px;
+    }
+
+    .catalogimagecontainer {
+        position: relative;
+        width: 100%;
+        float: left;
+    }
+
+    .catalogmaindescription {
+        position: relative;
+        width: 100%;
+        float: left;
+        clear: right;
+    }
+
+    #filtertoggle {
+        display: initial;
+    }
 
 }

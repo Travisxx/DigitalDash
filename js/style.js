@@ -29,8 +29,15 @@ function init() {
 			openClick = false;
 		}
 
-	}	
 
+	var toggleOpen = false;
+	var toggleClick = document.getElementById("filtericon").addEventListener("click", showFilters);
+
+	function showFilters() {
+		console.log("clicked");
+		}
+
+	}	
 
 
 }

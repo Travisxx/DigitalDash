@@ -20,9 +20,7 @@
 	<script type="text/javascript" src="js/style.js"></script>
 </head>
 <body>
-
-<div id="wrapper">
-	
+<header>	
 	<nav class="pure-g">
 		<div class="body" id="webnav">
 			<div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5" id="logo">
@@ -40,7 +38,8 @@
 			</div>
 		</div>
 	</nav>
-
+</header>	
+<div class="wrapper">
 	<div class="pure-g" id="hero">
 		<div id="herocontent">
 			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
@@ -48,9 +47,6 @@
 					<h1>FEATURED</h1>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
 				</div>	
-				<div id="heroexplorebutton">
-					<a href="#learnmore">explore</a>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -58,7 +54,7 @@
 	<div class="pure-g" id="emailsignup">
 		<div class="signupbody">
 			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3" id="singuptext">
-				<p>Register for our emails!</p>
+				<p>Register for our emails <i class="fa fa-paper-plane" aria-hidden="true"></i></p>
 			</div>
 			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3" id="signupform">
 				<form >
@@ -88,7 +84,7 @@
 							</p>
 						</div>
 						<div class="descbutton">
-							<a href="#shop">SEE MORE</a>
+							<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a>
 						</div>
 					</div>
 				</div>
@@ -110,14 +106,13 @@
 							</p>
 						</div>
 						<div class="descbutton">
-							<a href="#shop">SEE MORE</a>
+							<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
 						</div>
 					</div>
 				</div>	
 			</div>
 		</div>
 	</div>
-
 </div> <!-- wrapper -->
 
 <div id="headphones">
@@ -137,33 +132,7 @@
 	</div>
 </div><!-- headphones -->
 
-<footer>
-	<div class="row">
-		<div class="pure-g body">
-			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-				<ul>
-					<li>About us</li>
-					<li>Contact Us</li>
-				</ul>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-				<ul>
-					<li>Policies</li>
-					<li>Security</li>
-				</ul>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-				<div id="social">
-					<ul>
-						<li><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></li>
-						<li><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></li>
-						<li><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+<?php include 'footer.php'; ?>
 
 </body>
 </html>
