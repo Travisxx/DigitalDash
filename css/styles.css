@@ -92,7 +92,6 @@ nav {
     background-color: #f1f1f1;
     border-style: none;
     padding: 10px 2.5%;
-    border-radius: 25px;
 }
 
 #searchbar form > input[type="submit"]:focus {
@@ -107,7 +106,6 @@ nav {
     background-color: #FF404C;
     border-style: none;
     padding: 10px 2.5%;
-    border-radius: 25px;
 }
 
 #logo {
@@ -531,11 +529,6 @@ nav {
     position: relative;
     width: 40%;
     float: left;
-    background: #f1f1f1; /* Old browsers */
-    background: -moz-linear-gradient(left, #f1f1f1 0%, #ffffff 50%, #f1f1f1 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #f1f1f1 0%,#ffffff 50%,#f1f1f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-9 */
 }
 
 .catalogimage img {
@@ -548,7 +541,7 @@ nav {
 }
 
 .catalogimage {
-   width: 100%;
+   height: 100%;
 }
 
 .catalogmaindescription {
@@ -557,6 +550,7 @@ nav {
     float: left;
     clear: right;
     color: #5078A3;
+    padding-bottom: 40px;
 }
 
 .catalogdescparagraph {
@@ -567,6 +561,7 @@ nav {
     padding-top: 20px;
     width: 100%;
     float: left;
+    border-top: solid 1px #f1f1f1;
 }
 
 .catalogdescbutton {
@@ -595,21 +590,27 @@ nav {
     clear: right;
     font-size: 20px;
     font-weight: bold;
+    border-bottom: solid 1px #f1f1f1;
+    padding-bottom: 5px;
 }
 
 .productrating {
     width: 50%;
     float: left;
+    padding-top: 10px;
+
 }
 
 .productprice {
     width: 50%;
     float: left;
+    padding-top: 10px;
 }
 
 .productsku {
     width: 50%;
     float: left;
+    padding: 5px 0;
 }
 
 .productcategory {
@@ -622,6 +623,7 @@ nav {
     width: 100%;
     float: left;
     clear: right;
+    padding: 5px 0;
 }
 
 /*-------------- user catalog ------------------*/

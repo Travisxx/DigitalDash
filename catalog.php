@@ -92,8 +92,85 @@
 							<div class="catalogmaindescription">
 								<div class="catalogdescparagraph">
 									<span class="productname">Name</span>
+									<span class="productrating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span class="productprice">Price</span>
+									<span class="productcolor">Color</span>
+									<span class="productcategory">Category</span>
+									<span class="productsku">SKU#</span>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="catalogdescbutton">
+									<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<span class="productrating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/iphonecontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>					
+							<div class="catalogmaindescription">
+								<div class="catalogdescparagraph">
+									<span class="productname">Name</span>
+									<span class="productrating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
+									<span class="productprice">Price</span>
+									<span class="productcolor">Color</span>
+									<span class="productcategory">Category</span>
+									<span class="productsku">SKU#</span>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+									</p>
+								</div>
+								<div class="catalogdescbutton">
+									<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pure-u-1">
+					<div class="lbox">
+						<div class="catalogbody">
+							<div class="catalogimagecontainer">
+								<div class="catalogimage">
+									<img src="img/iphonecontent.png">
+								</div>
+								<div class="featuredcallout">
+									<p>Featured</p>
+								</div>
+							</div>					
+							<div class="catalogmaindescription">
+								<div class="catalogdescparagraph">
+									<span class="productname">Name</span>
+									<span class="productrating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</span>
 									<span class="productprice">Price</span>
 									<span class="productcolor">Color</span>
 									<span class="productcategory">Category</span>
