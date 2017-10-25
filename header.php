@@ -2,7 +2,7 @@
 	<nav class="pure-g">
 		<div class="body" id="webnav">
 			<div class="pure-u-1 pure-u-md-2-5 pure-u-lg-2-5" id="logo">
-				<img src="img/ddlogo.svg">
+				<a href="home.php"><img src="img/ddlogo.svg"></a>
 			</div>
 			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5" id="usericons">
 				<ul>

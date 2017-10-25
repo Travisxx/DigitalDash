@@ -556,15 +556,25 @@ nav {
     width: 60%;
     float: left;
     clear: right;
+    color: #5078A3;
+}
+
+.catalogdescparagraph {
+    padding: 20px;
+}
+
+.catalogdescparagraph p {
+    padding-top: 20px;
+    width: 100%;
+    float: left;
 }
 
 .catalogdescbutton {
-    width: 60%;
-    margin: auto;
-    padding: 15px;
+    width: 100%;
+    float: left;
+    clear: right;
     text-align: center;
-    background-color: #FF404C;
-    border-radius: 25px;
+    margin-top: 40px;
 }
 
 .catalogdescbutton a {
@@ -572,8 +582,47 @@ nav {
     font-size: 15px;
     color: #fff;
     text-decoration: none;
+    background-color: #FF404C;
+    border-radius: 25px;
 }
 
+/*--------------- product information ---------------*/
+
+
+.productname {
+    width: 100%;
+    float: left;
+    clear: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.productrating {
+    width: 50%;
+    float: left;
+}
+
+.productprice {
+    width: 50%;
+    float: left;
+}
+
+.productsku {
+    width: 50%;
+    float: left;
+}
+
+.productcategory {
+    width: 100%;
+    float: left;
+    clear: right;
+}
+
+.productcolor {
+    width: 100%;
+    float: left;
+    clear: right;
+}
 
 /*-------------- user catalog ------------------*/
 
