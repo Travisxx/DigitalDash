@@ -33,46 +33,50 @@
 		<div class="catalogbodycontainer">
 			<div class="pure-u-1 pure-u-md-1 pure-u-lg-1-4">
 				<div id="filterbody">
-					<div class="pure-u-1" id="filtertoggle">
-						<h3>Filter</h3>
-						<i class="fa fa-caret-square-o-down" aria-hidden="true" id="filtericon"></i>
+					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
+						<div class="lbox">
+							<span>Brand</span>
+							<ul>
+								<li><input type="checkbox"><label>Apple</label></li>
+								<li><input type="checkbox"><label>Samsung</label></li>
+							</ul>
+						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
-						<span>Brand</span>
-						<ul>
-							<li><input type="checkbox"><label>Apple</label></li>
-							<li><input type="checkbox"><label>Samsung</label></li>
-						</ul>
+						<div class="lbox">
+							<span>Color</span>
+							<ul>
+								<li><input type="checkbox"><label>White</label></li>
+								<li><input type="checkbox"><label>Red</label></li>
+								<li><input type="checkbox"><label>Blue</label></li>
+								<li><input type="checkbox"><label>Clear</label></li>
+								<li><input type="checkbox"><label>Silver</label></li>
+							</ul>
+						</div>
 					</div>
 					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
-						<span>Color</span>
-						<ul>
-							<li><input type="checkbox"><label>White</label></li>
-							<li><input type="checkbox"><label>Red</label></li>
-							<li><input type="checkbox"><label>Blue</label></li>
-							<li><input type="checkbox"><label>Clear</label></li>
-							<li><input type="checkbox"><label>Silver</label></li>
-						</ul>
-					</div>
-					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
-						<span>Star Rating</span>
-						<ul>
-							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
-							<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
-						</ul>
+						<div class="lbox">
+							<span>Star Rating</span>
+							<ul>
+								<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i></li>
+								<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+								<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+								<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+								<li><input type="checkbox"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+							</ul>
+						</div>
 					</div>	
 					<div class="pure-u-1 pure-u-md-1-4 pure-u-lg-1 filterstyle">
-						<span>Price</span>
-						<ul>
-							<li><input type="checkbox"><label>$10.00</label></li>
-							<li><input type="checkbox"><label>$15.00</label></li>
-							<li><input type="checkbox"><label>$20.00</label></li>
-							<li><input type="checkbox"><label>$25.00</label></li>
-							<li><input type="checkbox"><label>$30.00</label></li>
-						</ul>
+						<div class="lbox">
+							<span>Price</span>
+							<ul>
+								<li><input type="checkbox"><label>$10.00</label></li>
+								<li><input type="checkbox"><label>$15.00</label></li>
+								<li><input type="checkbox"><label>$20.00</label></li>
+								<li><input type="checkbox"><label>$25.00</label></li>
+								<li><input type="checkbox"><label>$30.00</label></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -96,7 +100,7 @@
 								</div>					
 								<div class=\"catalogmaindescription\">
 									<div class=\"catalogdescparagraph\">
-										<span class=\"productname\">".$row['Product_Name']."</span>
+									
 										<span class=\"productrating\">
 											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
 											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
@@ -104,6 +108,7 @@
 											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
 											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
 										</span>
+										<span class=\"productname\">".$row['Product_Name']."</span>
 										<span class=\"productprice\">"."$".$row['Cost']."</span>
 										<span class=\"productcolor\">"."Color: ".$row['Color']."</span>
 										<span class=\"productcategory\">"."Category: ".$row['Category']."</span>

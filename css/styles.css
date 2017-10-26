@@ -477,18 +477,18 @@ nav {
 }
 
 .filterstyle {
-   float: left;
-   margin-bottom: 30px;
-   padding-bottom: 20px;
-   -webkit-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    float: left;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
     -moz-box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
     box-shadow: 0px 0px 35px -5px rgba(163,173,194,0.29);
+    border-top: solid 2px #FF404C;
 }
 
 .filterstyle ul {
     width: 100%;
     float: left;
-    padding-left: 10px;
+    padding: 10px 0;
 }
 
 .filterstyle li {
@@ -499,21 +499,21 @@ nav {
 .filterstyle span {
     width: 100%;
     float: left;
-    padding: 7px 0;
+    padding: 0 0 10px 0;
     margin-bottom: 10px;
     text-align: center;
-    color: #5078A3;
-    background-color: #f1f1f1;
-
+    background-color: #fff;
+    border-bottom: solid 1px #f1f1f1;
 
 }
 
 .filterstyle label {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .filterstyle i {
-    margin-left: 10px;
+    margin-left: 5px;
+    color: #dbb21e;
 }
 
 .catalogbody {
@@ -550,9 +550,9 @@ nav {
     width: 60%;
     float: left;
     clear: right;
-    color: #5078A3;
     padding-bottom: 40px;
-    background-color: #fcfcfc;
+    color: #474C55;
+    font-size: 13px;
 }
 
 .catalogdescparagraph {
@@ -563,7 +563,8 @@ nav {
     padding-top: 20px;
     width: 100%;
     float: left;
-    border-top: solid 1px #f1f1f1;
+    line-height: 15px;
+    letter-spacing: 1px;
 }
 
 .catalogdescbutton {
@@ -574,13 +575,14 @@ nav {
     margin-top: 40px;
 }
 
-.catalogdescbutton a {
-    padding: 10px 30px;
-    font-size: 15px;
+.catalogdescbutton input[type="submit"] {
     color: #fff;
-    text-decoration: none;
     background-color: #FF404C;
-    border-radius: 25px;
+    border-style: none;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 0px 35px -7px rgba(255,64,76,0.84);
+    -moz-box-shadow: 0px 0px 35px -7px rgba(255,64,76,0.84);
+    box-shadow: 0px 0px 35px -7px rgba(255,64,76,0.84);
 }
 
 /*--------------- product information ---------------*/
@@ -592,21 +594,23 @@ nav {
     clear: right;
     font-size: 20px;
     font-weight: bold;
-    border-bottom: solid 1px #f1f1f1;
     padding-bottom: 5px;
 }
 
 .productrating {
     width: 50%;
     float: left;
-    padding-top: 10px;
+    padding: 10px 0;
+    color: #dbb21e;
+    font-size: 16px;
 
 }
 
 .productprice {
     width: 50%;
     float: left;
-    padding-top: 10px;
+    padding: 10px 0;
+    font-size: 25px;
 }
 
 .productsku {
@@ -811,7 +815,6 @@ nav {
         padding: 7px 0 7px 10px;
         margin-bottom: 10px;
         text-align: left;
-        color: #5078A3;
         font-weight: bold;
         background-color: transparent;
         border-bottom: 1px solid #f1f1f1;
