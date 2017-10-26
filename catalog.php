@@ -78,115 +78,56 @@
 			</div>
 
 			<div class="pure-u-1 pure-u-md-1 pure-u-lg-3-4">
-				<div class="pure-u-1">
-					<div class="lbox">
-						<div class="catalogbody">
-							<div class="catalogimagecontainer">
-								<div class="catalogimage">
-									<img src="img/iphonecontent.png">
-								</div>
-								<div class="featuredcallout">
-									<p>Featured</p>
-								</div>
-							</div>					
-							<div class="catalogmaindescription">
-								<div class="catalogdescparagraph">
-									<span class="productname">Name</span>
-									<span class="productrating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-									</span>
-									<span class="productprice">Price</span>
-									<span class="productcolor">Color</span>
-									<span class="productcategory">Category</span>
-									<span class="productsku">SKU#</span>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-									</p>
-								</div>
-								<div class="catalogdescbutton">
-									<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
+				<?php  
+				include ('serverlogin.php');
+				$table = "SELECT * FROM products";
+
+				$tableresults = $conn->query($table);   
+            
+                while ($row = $tableresults->fetch_assoc() ) {
+                	echo "
+					<div class=\"pure-u-1\" id=\""."item".$row['Item_Number']."\">
+						<div class=\"lbox\">
+							<div class=\"catalogbody\">
+								<div class=\"catalogimagecontainer\">
+									<div class=\"catalogimage\">
+										<img src=\"".$row['Product_Image']."\">
+									</div>
+								</div>					
+								<div class=\"catalogmaindescription\">
+									<div class=\"catalogdescparagraph\">
+										<span class=\"productname\">".$row['Product_Name']."</span>
+										<span class=\"productrating\">
+											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+											<i class=\"fa fa-star\" aria-hidden=\"true\"></i>
+										</span>
+										<span class=\"productprice\">"."$".$row['Cost']."</span>
+										<span class=\"productcolor\">"."Color: ".$row['Color']."</span>
+										<span class=\"productcategory\">"."Category: ".$row['Category']."</span>
+										<span class=\"productsku\">"."SKU# ".$row['SKU']."</span>
+										<p>".$row['Description']."</p>
+									</div>
+									<div class=\"catalogdescbutton\">
+										<form action=\"shoppingcart.php\" method=\"get\">
+											<input type=\"hidden\" name=\"cart_id\" value=\"".$row['Item_Number']."\">
+						                	<input type=\"submit\" value=\"Add to Cart\">
+						                </form>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					";
+                }
 
-				<div class="pure-u-1">
-					<div class="lbox">
-						<div class="catalogbody">
-							<div class="catalogimagecontainer">
-								<div class="catalogimage">
-									<img src="img/iphonecontent.png">
-								</div>
-								<div class="featuredcallout">
-									<p>Featured</p>
-								</div>
-							</div>					
-							<div class="catalogmaindescription">
-								<div class="catalogdescparagraph">
-									<span class="productname">Name</span>
-									<span class="productrating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-									</span>
-									<span class="productprice">Price</span>
-									<span class="productcolor">Color</span>
-									<span class="productcategory">Category</span>
-									<span class="productsku">SKU#</span>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-									</p>
-								</div>
-								<div class="catalogdescbutton">
-									<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                $conn->close();  
+                ?>
 
-				<div class="pure-u-1">
-					<div class="lbox">
-						<div class="catalogbody">
-							<div class="catalogimagecontainer">
-								<div class="catalogimage">
-									<img src="img/iphonecontent.png">
-								</div>
-								<div class="featuredcallout">
-									<p>Featured</p>
-								</div>
-							</div>					
-							<div class="catalogmaindescription">
-								<div class="catalogdescparagraph">
-									<span class="productname">Name</span>
-									<span class="productrating">
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-										<i class="fa fa-star" aria-hidden="true"></i>
-									</span>
-									<span class="productprice">Price</span>
-									<span class="productcolor">Color</span>
-									<span class="productcategory">Category</span>
-									<span class="productsku">SKU#</span>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-									</p>
-								</div>
-								<div class="catalogdescbutton">
-									<a href="#shop"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				
+                
 			</div>
 		</div>
 	</div>
