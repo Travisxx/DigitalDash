@@ -6,8 +6,8 @@
 			</div>
 			<div class="pure-u-1 pure-u-md-3-5 pure-u-lg-3-5" id="usericons">
 				<ul>
-				 	<li><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
-				 	<li><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></li>
+				 	<li><a href="cart.php"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+				 	<li><a href="admin.php"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></a></li>
 				 	<li><i class="fa fa-search" aria-hidden="true" id="searchicon"></i></li>
 				 	<li><a href="#facebook">Apple</a></li>
 				 	<li><a href="#news">Samsung</a></li>
