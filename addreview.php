@@ -146,3 +146,4 @@ include ('serverlogin.php');
 
 <?php include 'footer.php'; ?>
 </html>
+<?php $conn->close(); ?>

@@ -20,7 +20,7 @@ if(isset($_POST['login']) && (!isset($_SESSION['logged_in']))) {
 } 
      
 if (isset($_SESSION['logged_in']) == true ) { 
-    header("Location: client.php"); 
+    header("Location: admin.php"); 
 }
 
 if (isset($_POST['createaccount'])) {
