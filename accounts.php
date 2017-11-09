@@ -4,7 +4,7 @@ session_start();
 include ('serverlogin.php');
 if(isset($_POST['login']) && (!isset($_SESSION['logged_in']))) { 
 
-    $users = "SELECT username, password FROM users"; 
+    $users = "SELECT username, password, userlevel FROM users"; 
     $userinfo = $conn->query($users); 
 
     while($row = $userinfo->fetch_assoc()) { 
@@ -12,15 +12,22 @@ if(isset($_POST['login']) && (!isset($_SESSION['logged_in']))) {
         if ( (($_POST['username']) == ($row['username'])) && (($_POST['password']) == ($row['password'])) ) { 
             $_SESSION['logged_in'] = true;
             $_SESSION['username'] = $row['username'];
+            $_SESSION['userlevel'] =$row['userlevel'];
         } else { 
            echo "username or password do not match";
         } 
 
     } 
 } 
-     
-if (isset($_SESSION['logged_in']) == true ) { 
-    header("Location: admin.php"); 
+    
+if (isset($_SESSION['logged_in'])) { 
+    if (isset($_SESSION['userlevel'])) {
+        if ( $_SESSION['userlevel'] === 'user') {
+           header("Location: client.php");
+        } elseif ($_SESSION['userlevel'] === 'admin') {
+            header("Location: admin.php");
+        }
+    } 
 }
 
 if (isset($_POST['createaccount'])) {
@@ -39,7 +46,7 @@ if (isset($_POST['createaccount'])) {
     '".$_POST['email']."'
     )";
     $conn->query($insertsql);
-    header("Location: client.php");
+    header("Location: home.php");
 }
 
 $conn->close();
