@@ -18,18 +18,21 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="https://use.fontawesome.com/3e58986b99.js"></script>
 	<script type="text/javascript" src="js/style.js"></script>
+	<? include 'serverlogin.php';
+		if ($conn->connect_error) {
+		    die("Connection failed: " . $conn->connect_error);
+		} 
+		
+		$sql = "SELECT * FROM products";
+		$result = $conn->query($sql);
+	?>
 </head>
 <body>
 <?php include 'header.php'; ?>	
 <div class="wrapper">
 	<div class="pure-g" id="hero">
 		<div id="herocontent">
-			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
-				<div id="herotext">
-					<h1>FEATURED</h1>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-				</div>	
-			</div>
+			
 		</div>
 	</div>
 
@@ -54,7 +57,19 @@
 				<div class="lbox">
 					<div class="imagecontainer">
 						<div class="featuredimage">
-							<img src="img/iphonecontent.png">
+							<img src=<?
+								  $x = 1;
+								  $result = $conn->query($sql);
+								  if ($result->num_rows > 0) {
+								   while($row = $result->fetch_assoc()) {
+								    if($x == 1){//set X equal to product number in database to show
+								       echo "\"" .$row['Product_Image']. "\"";
+								   }
+								   $x = $x + 1;
+								   }
+								} else {
+								  echo "0 results";
+								}?>>
 						</div>
 						<div class="featuredcallout">
 							<p>Featured</p>
@@ -62,7 +77,19 @@
 					</div>					
 					<div class="maindescription">
 						<div class="descparagraph">
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							<p><?
+								$x = 1;
+ 							   $result = $conn->query($sql);
+ 							   if ($result->num_rows > 0) {
+ 							    while($row = $result->fetch_assoc()) {
+ 							     if($x == 1){//set X equal to product number in database to show
+ 							        echo  $row['Description'];
+ 							        $x = $x + 1;
+ 							    }
+ 							    }
+ 							 } else {
+ 							   echo "0 results";
+ 							 }?>
 							</p>
 						</div>
 						<div class="descbutton">
@@ -76,7 +103,19 @@
 				<div class="lbox">
 					<div class="imagecontainer">
 						<div class="featuredimage">
-							<img src="img/samsungcontent.png">
+							<img src=<?
+									$x = 1;
+								  $result2 = $conn->query($sql);
+								  if ($result2->num_rows > 0) {
+								   while($row = $result2->fetch_assoc()) {
+								    if($x == 2){//set X equal to product number in database to show
+								       echo "\"" .$row['Product_Image']. "\"";
+								   }
+								   $x = $x + 1;
+								   }
+								} else {
+								  echo "0 results";
+								}?>>
 						</div>
 						<div class="featuredcallout">
 							<p>Featured</p>
@@ -84,7 +123,19 @@
 					</div>
 					<div class="maindescription">
 						<div class="descparagraph">
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+							<p><?
+								$x = 1;
+ 							   $result = $conn->query($sql);
+ 							   if ($result->num_rows > 0) {
+ 							    while($row = $result->fetch_assoc()) {
+ 							     if($x == 2){//set X equal to product number in database to show
+ 							        echo  $row['Description'];
+ 							    }
+ 							    $x = $x + 1;
+ 							    }
+ 							 } else {
+ 							   echo "0 results";
+ 							 }?>
 							</p>
 						</div>
 						<div class="descbutton">
