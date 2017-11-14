@@ -5,6 +5,7 @@ if (!isset($_COOKIE['cart_id'])) {
 	setcookie("cart_id", md5(session_id()), time() + (86400 * 30));
 	setcookie("cart_key", 5*rand(), time() + (86400 * 30));
 }
+
 ?>
 
 <!DOCTYPE html>

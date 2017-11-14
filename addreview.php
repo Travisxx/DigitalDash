@@ -1,5 +1,6 @@
 <?php  
 session_start();
+
 include ('serverlogin.php');
 ?> 
 
@@ -55,7 +56,7 @@ include ('serverlogin.php');
 		?>
 			<div class="pure-u-1 pure-u-md-2-5">
 				<div class="newreview">
-					<?php if (isset($_SESSION['logged_in']) === TRUE) {
+					<?php if (isset($_SESSION['logged_in'])) {
 						
 					echo "<h2>Submit New review</h2>";
 					echo "<form method=\"POST\" action=\"\">";
@@ -146,3 +147,4 @@ include ('serverlogin.php');
 
 <?php include 'footer.php'; ?>
 </html>
+<?php $conn->close(); ?>

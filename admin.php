@@ -1,9 +1,13 @@
 <?php  
 session_start();
 include ('serverlogin.php');
-if(!isset($_SESSION['logged_in'])) {
+if(!isset($_SESSION['logged_in']) && !isset($_SESSION['userlevel'])) {
     header("Location: login.php");
-}   
+} elseif (isset($_SESSION['logged_in']) && isset($_SESSION['userlevel'])) {
+    if ( $_SESSION['userlevel'] === 'user') {
+           header("Location: client.php");
+    }
+}
 
 ?> 
 
