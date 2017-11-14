@@ -25,7 +25,8 @@ include ('serverlogin.php');
 		<?php
 				$cart = $_COOKIE['cart_id'];
 				$carttable = "SELECT * FROM $cart";
-				$carttableresults = $conn->query($carttable);   
+				$carttableresults = $conn->query($carttable); 
+				$total = 0;			
             	while ($row = $carttableresults->fetch_assoc() ) {
                 	echo "<div class=\"lbox\">";
 					echo "<div class=\"cartbody\">";
@@ -55,7 +56,8 @@ include ('serverlogin.php');
 					echo "</div>";
 					echo "</div>";	
 
-								
+					$subtotal = $row['price'] * $row['qty']; 
+					$total += $subtotal;
 					
                 }
          ?>      	
@@ -63,10 +65,10 @@ include ('serverlogin.php');
 			<div class="cartdetails">
 				<div class="totals">
 					<ul>
-						<li>$19.99</li>
+						<li><? echo $total ?></li>
 						<li>$3.00</li>
 						<li>FREE</li>
-						<li>$22.99</li>
+						<li><? echo $total ?></li>
 					</ul>
 				</div>
 				<div class="totalheadings">
