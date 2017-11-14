@@ -32,7 +32,12 @@
 <div class="wrapper">
 	<div class="pure-g" id="hero">
 		<div id="herocontent">
-			
+			<div class="pure-u-1 pure-u-md-2-3 pure-u-lg-2-3">
+ 				<div id="herotext">
+ 					<h1>FEATURED</h1>
+ 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+ 				</div>	
+ 			</div>
 		</div>
 	</div>
 
