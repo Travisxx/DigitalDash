@@ -65,10 +65,10 @@ include ('serverlogin.php');
 			<div class="cartdetails">
 				<div class="totals">
 					<ul>
-						<li><? echo $total ?></li>
+						<li>$<? echo $total ?></li>
 						<li>$3.00</li>
 						<li>FREE</li>
-						<li><? echo $total ?></li>
+						<li>$<? echo $total ?></li>
 					</ul>
 				</div>
 				<div class="totalheadings">
