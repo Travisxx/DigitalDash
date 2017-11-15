@@ -34,15 +34,8 @@ include ('serverlogin.php');
 					echo "</div>"."\n";					
 					echo "<div class=\"catalogmaindescription\">"."\n";
 						echo "<div class=\"catalogdescparagraph\">"."\n";
-						echo "<span class=\"productrating\">"."\n";
-						echo "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"."\n";
-						echo "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"."\n";
-						echo "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"."\n";
-						echo "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"."\n";
-						echo "<i class=\"fa fa-star\" aria-hidden=\"true\"></i>"."\n";
-						echo "</span>"."\n";
 						echo "<span class=\"productname\">".$row['Product_Name']."</span>"."\n";
-						echo "<span class=\"productprice\">"."$".floatval($row['Cost'])."</span>"."\n";
+						echo "<span class=\"productprice\">"."$".floatval($row['price'])."</span>"."\n";
 						echo "<span class=\"productcolor\">"."Color: ".$row['Color']."</span>"."\n";
 						echo "<span class=\"productcategory\">"."Category: ".$row['Category']."</span>"."\n";
 						echo "<span class=\"productsku\">"."SKU# ".$row['SKU']."</span>"."\n";
@@ -56,36 +49,22 @@ include ('serverlogin.php');
 		?>
 			<div class="pure-u-1 pure-u-md-2-5">
 				<div class="newreview">
-					<?php if (isset($_SESSION['logged_in'])) {
-						
-					echo "<h2>Submit New review</h2>";
-					echo "<form method=\"POST\" action=\"\">";
-					echo "<label>Star Rating</label>";
-					echo "<select name=\"rating\">";
-					echo "<option value=\"1\">1 Star</option>";
-					echo "<option value=\"2\">2 Star</option>";
-					echo "<option value=\"3\">3 Star</option>";
-					echo "<option value=\"4\">4 Star</option>";
-					echo "<option value=\"5\">5 Star</option>";
-					echo "</select>";
-					echo "<textarea type=\"textarea\" name=\"reviewtext\"></textarea>";
-					echo "<input type=\"submit\" name=\"submitreview\">";
-					echo "</form>";
-					
-						if (isset($_POST['submitreview'])) {
-							$insertsql = "
-		                    INSERT INTO reviews (review_date, sku, rating, review, user)
-		                    VALUES (
-		                    CURRENT_TIMESTAMP,
-		                    '".$_GET['sku']."',
-		                    '".$_POST['rating']."',
-		                    '".$_POST['reviewtext']."',
-		                    '".$_SESSION['username']."'
-		                	)";
-
-		                    $conn->query($insertsql);
-		                    unset($_POST['submitreview']);
-						}
+					<?php 
+					if (isset($_SESSION['logged_in'])) {
+						echo "<h2>Submit New review</h2>";
+						echo "<form method=\"POST\" action=\"reviewprocess.php\">";
+						echo "<label>Star Rating</label>";
+						echo "<select name=\"rating\">";
+						echo "<option value=\"1\">1 Star</option>";
+						echo "<option value=\"2\">2 Star</option>";
+						echo "<option value=\"3\">3 Star</option>";
+						echo "<option value=\"4\">4 Star</option>";
+						echo "<option value=\"5\">5 Star</option>";
+						echo "</select>";
+						echo "<textarea type=\"textarea\" name=\"reviewtext\"></textarea>";
+						echo "<input type=\"hidden\" name=\"sku\" value=".$_GET['sku'].">";
+						echo "<input type=\"submit\" name=\"submitreview\">";
+						echo "</form>";
 					} else {
 						echo "<div class=\"checkoutbuttons\">";
 					    echo "<div class=\"pure-g\">";
@@ -116,7 +95,7 @@ include ('serverlogin.php');
 		                        <thead>
 		                            <tr>
 		                            <th>Rating</th>
-		                            <th>Description</th>
+		                            <th>Comment</th>
 		                            <th>User</th>
 		                            <th>Time</th>
 		                            </tr>
@@ -128,7 +107,7 @@ include ('serverlogin.php');
 		                        $tableresults = $conn->query($table);   
 		                        while ($row = $tableresults->fetch_assoc() ) {
 		                            echo "<tr>";
-		                            echo "<td>".$row['rating']."</td>";
+		                            echo "<td>".$row['rating']. " Stars"."</td>";
 		                            echo "<td>".$row['review']."</td>";
 		                            echo "<td>".$row['user']."</td>";
 		                            echo "<td>".$row['review_date']."</td>";
