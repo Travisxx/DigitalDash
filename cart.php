@@ -29,7 +29,8 @@ include ('serverlogin.php');
 				if (isset($_COOKIE['cart_id'])) {
 				$cart = $_COOKIE['cart_id'];
 				$carttable = "SELECT * FROM $cart";
-				$carttableresults = $conn->query($carttable);   
+				$carttableresults = $conn->query($carttable); 
+				$total = 0;			
             	while ($row = $carttableresults->fetch_assoc() ) {
                 	
                 	if (!$row) {
@@ -71,12 +72,18 @@ include ('serverlogin.php');
 						echo "</div>";
 					echo "</div>";
 
+<<<<<<< HEAD
 					$qty = $row['qty'];
 					$cartqty += $qty;
 
 					$sum = ($row['qty'] * $row['price']);
 					$carttotal += $sum;
 					}			
+=======
+					$subtotal = $row['price'] * $row['qty']; 
+					$total += $subtotal;
+					
+>>>>>>> e0eb24d8b426495febeeb23df75e4b8a13b05aef
                 }
                } else {
                	echo "<div class=\"cartheading\">";
@@ -92,10 +99,17 @@ include ('serverlogin.php');
 			<div class="cartdetails">
 				<div class="totals">
 					<ul>
+<<<<<<< HEAD
 						<li>$<?php echo $carttotal; ?></li>
 						<li>FREE</li>
 						<li>FREE</li>
 						<li>$<?php echo $carttotal; ?></li>
+=======
+						<li>$<? echo $total ?></li>
+						<li>$3.00</li>
+						<li>FREE</li>
+						<li>$<? echo $total ?></li>
+>>>>>>> e0eb24d8b426495febeeb23df75e4b8a13b05aef
 					</ul>
 				</div>
 				<div class="totalheadings">
